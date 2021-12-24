@@ -28,7 +28,6 @@ class FormData extends Component {
         }
 
         console.log("Handle Submit",this.state.inputData);
-        // this.props.onSubmit(this.state.inputData)
         
     }
     handleData = ()=>{
