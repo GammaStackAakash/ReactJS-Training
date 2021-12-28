@@ -8,7 +8,7 @@ function FormData(props) {
 
   function handleInput(event) {
     console.log(event.target);
-    let s1 = { ...inputValues };
+    const s1 = { ...inputValues };
     console.log(s1);
     const name = event.target.name;
     const value = event.target.value;
@@ -16,7 +16,7 @@ function FormData(props) {
   }
   function handleSubmit(event) {
     event.preventDefault();
-    let errors = validation();
+    const errors = validation();
     if (isValid(errors)) {
       props.onSubmit(inputValues);
     } else {
@@ -27,7 +27,7 @@ function FormData(props) {
   }
 
   function validation() {
-    let errors = {};
+    const errors = {};
     function phoneNumber(value) {
       var contactRegEx = /^\d{10}$/;
       if (value.match(contactRegEx)) {
@@ -37,7 +37,7 @@ function FormData(props) {
       }
     }
 
-    let { name, address, contact, college } = inputValues;
+    const { name, address, contact, college } = inputValues;
     if (!name) {
       console.log(" Empty");
       errors.name = "Name must not be Empty";
@@ -61,12 +61,12 @@ function FormData(props) {
     return errors;
   }
   function isValid(errors) {
-    let keys = Object.keys(errors);
-    let count = keys.reduce((acc, curr) => (errors[curr] ? acc + 1 : acc), 0);
+    const keys = Object.keys(errors);
+    const count = keys.reduce((acc, curr) => (errors[curr] ? acc + 1 : acc), 0);
     return count === 0;
   }
-  let { name, address, contact, college } = inputValues;
-  let tempError = { ...errorValues };
+  const { name, address, contact, college } = inputValues;
+  const tempError = { ...errorValues };
   return (
     // ...
     <div className="container">

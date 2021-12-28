@@ -11,7 +11,7 @@ function MainComponent() {
   });
   function handleData(inputData) {
     console.log(" We Handled Person", inputData);
-    let tempValue = { ...value };
+    const tempValue = { ...value };
     tempValue.dataIndex >= 0
       ? (tempValue.data[tempValue.dataIndex] = inputData)
       : tempValue.data.push(inputData);
@@ -20,18 +20,18 @@ function MainComponent() {
     setValue(tempValue);
   }
   function showForm() {
-    let tempValue = { ...value };
+    const tempValue = { ...value };
     tempValue.view = "form";
     setValue(tempValue);
   }
   function handleUpdate(index) {
-    let tempValue = { ...value };
+    const tempValue = { ...value };
     tempValue.view = "form";
     tempValue.dataIndex = index;
     setValue(tempValue);
   }
-  let entryData = { name: "", address: "", contact: "", college: "" };
-  let { data, view, dataIndex } = { ...value };
+  const entryData = { name: "", address: "", contact: "", college: "" };
+  const { data, view, dataIndex } = { ...value };
   return view === "data" ? (
     <ShowData onSubmit={handleUpdate} onClick={showForm} data={data} />
   ) : (
