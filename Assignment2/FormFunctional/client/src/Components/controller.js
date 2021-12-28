@@ -33,46 +33,6 @@ function MainComponent() {
   let entryData = { name: "", address: "", contact: "", college: "" };
   let { data, view, dataIndex } = { ...value };
   return view === "data" ? (
-    // <div className="form-group">
-    //   {data.map((curElem, index) => {
-    //     if (index === 0) {
-    //       return null;
-    //     } else {
-    //       return (
-    //         <div>
-    //           <p className="elem">
-    //             {curElem.name ? <span>Name : {curElem.name} </span> : ""}
-    //           </p>
-    //           <p className="elem">
-    //             {curElem.address ? (
-    //               <span>Address : {curElem.address} </span>
-    //             ) : (
-    //               ""
-    //             )}
-    //           </p>
-    //           <p className="elem">
-    //             {curElem.contact ? (
-    //               <span>Contact : {curElem.contact} </span>
-    //             ) : (
-    //               ""
-    //             )}
-    //           </p>
-    //           <p className="elem">
-    //             {curElem.college ? (
-    //               <span>College : {curElem.college} </span>
-    //             ) : (
-    //               ""
-    //             )}
-    //           </p>
-    //           <button onClick={() => handleUpdate(index)}>Edit</button>
-    //         </div>
-    //       );
-    //     }
-    //   })}
-    //   <button className="btn" onClick={() => showForm()}>
-    //     ADD NEW DATA
-    //   </button>
-    // </div>
     <ShowData onSubmit={handleUpdate} onClick={showForm} data={data} />
   ) : (
     <>
