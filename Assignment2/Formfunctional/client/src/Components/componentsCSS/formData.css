@@ -1,0 +1,31 @@
+.container {
+  border: 2px solid burlywood;
+  margin: 320px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.entry-cont {
+  border: 2px solid black;
+  padding: 20px;
+  margin-left: 50px;
+  margin-bottom: 5px;
+  margin-right: 50px;
+}
+
+.form-group {
+  border: 2px solid grey;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 20px;
+}
+
+.formTitle {
+  border: 2px solid burlywood;
+
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: center;
+}
