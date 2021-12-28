@@ -17,6 +17,7 @@
 .entry-cont {
   padding: 20px;
 }
+
 .element {
   padding: 10px;
   text-align: center;
@@ -25,10 +26,12 @@
 .btn {
   margin: 5px;
 }
+
 .error-data {
   color: rgb(214, 102, 51);
   font-size: 13px;
 }
+
 .data-container {
   border: 2px solid grey;
   margin: 5px;
@@ -37,6 +40,7 @@
   margin-right: 20px;
   margin-top: 20px;
 }
+
 .btn-data {
   margin: 5px;
 }

@@ -1,0 +1,6 @@
+change double quotes to single quotes
+format code
+use good naming conventions
+use es6 syntax
+use other hooks as well - useEffect, useReducer, useCallback, useMemo
+read about difference between class and functional components

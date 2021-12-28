@@ -1,13 +1,12 @@
-import "./App.css";
-import MainComponent from "./Components/controller";
+import './App.css'
+import MainComponent from './Components/controller'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      {/* <h5>-------------------------------</h5> */}
+    <div className='App'>
       <MainComponent />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
